@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>465</width>
+    <height>366</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="fieldGrowthPolicy">
+       <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="kodeLabel">
+        <property name="text">
+         <string>&amp;Kode :</string>
+        </property>
+        <property name="buddy">
+         <cstring>kodeLineEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="kodeLineEdit">
+        <property name="placeholderText">
+         <string>Kode</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="namaLabel">
+        <property name="text">
+         <string>&amp;Nama :</string>
+        </property>
+        <property name="buddy">
+         <cstring>namaLineEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="namaLineEdit">
+        <property name="placeholderText">
+         <string>Nama</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="tempatLahirLabel">
+        <property name="text">
+         <string>Tempa&amp;t Lahir :</string>
+        </property>
+        <property name="buddy">
+         <cstring>tempatLahirLineEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="tempatLahirLineEdit">
+        <property name="placeholderText">
+         <string>Tempat Lahir</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="tanggalLahirLabel">
+        <property name="text">
+         <string>Tan&amp;ggal Lahir :</string>
+        </property>
+        <property name="buddy">
+         <cstring>tanggalLahirDateEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QDateEdit" name="tanggalLahirDateEdit">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="displayFormat">
+         <string>dd-MM-yyyy</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="jenisKelaminLabel">
+        <property name="text">
+         <string>Jenis &amp;Kelamin :</string>
+        </property>
+        <property name="buddy">
+         <cstring>jenisKelaminComboBox</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="jenisKelaminComboBox">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <item>
+         <property name="text">
+          <string>Laki - Laki</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Perempuan</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="handphoneLabel">
+        <property name="text">
+         <string>&amp;Handphone :</string>
+        </property>
+        <property name="buddy">
+         <cstring>handphoneLineEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="handphoneLineEdit">
+        <property name="locale">
+         <locale language="Indonesian" country="Indonesia"/>
+        </property>
+        <property name="placeholderText">
+         <string>Handphone</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="alamatLabel">
+        <property name="text">
+         <string>&amp;Alamat :</string>
+        </property>
+        <property name="buddy">
+         <cstring>alamatTextEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QTextEdit" name="alamatTextEdit">
+        <property name="statusTip">
+         <string>Alamat</string>
+        </property>
+        <property name="whatsThis">
+         <string>Alamat</string>
+        </property>
+        <property name="tabChangesFocus">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QCheckBox" name="statusCheckBox">
+        <property name="text">
+         <string>Aktif</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="statusAction">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="deletePushButton">
+       <property name="text">
+        <string>&amp;Delete</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Close|QDialogButtonBox::Save</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <action name="actionValidasi">
+   <property name="text">
+    <string>Validasi</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>kodeLineEdit</tabstop>
+  <tabstop>namaLineEdit</tabstop>
+  <tabstop>tempatLahirLineEdit</tabstop>
+  <tabstop>tanggalLahirDateEdit</tabstop>
+  <tabstop>jenisKelaminComboBox</tabstop>
+  <tabstop>handphoneLineEdit</tabstop>
+  <tabstop>alamatTextEdit</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
